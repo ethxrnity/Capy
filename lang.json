@@ -1,0 +1,9 @@
+{
+    "languages": ["english", "russian"],
+    "translations": {
+        "TEST": {
+            "english": "Test1",
+            "russian": "Test2"
+        }
+    }
+}
