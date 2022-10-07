@@ -9,11 +9,20 @@ dodge: "Dodge"
 attack_normal: "Attack - Normal"
 attack_hold: "Attack - Hold" 
 tips_tricks: "Tips & Tricks"
+1star: "Advancements\n\n1★"
+2star: "2★"
+3star: "3★"
+4star: "4★"
+5star: "5★"
+6star: "6★"
+1trait: "**Simulacrum Traits**:\n\n1200"
+2trait: "4000"
 
-
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Shiro
 shiro_2piece: "Increase both damage and shatter to targets with more than 50% HP by 15%/19%/22.5%/26%."
 shiro_4piece: "Upon entering battle, gain a 20%/25%/30%/35% damage boost for 35 seconds. Reset 5 seconds after exiting battle."
+# Weapon
 hto_shiro: "Drop from Lucia\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Shiro Matrix Box"
 shiro_desc: "Mainly DPS Shatter character"
 shiro_weapon: "Chakram of the Seas"
@@ -23,10 +32,22 @@ shiro_dodge: "Tap normal attack during the short period after dodging to trigger
 shiro_attack_normal: "While on the ground, brandish the chakram to unleash 5 spinning attacks."
 shiro_attack_hold: "After the second normal attack, hold attack button to activate Scatter. Fire five penetrating chakrams forward, each hit dealing 43.5% of ATK + 68 damage, with minor knockback." 
 shiro_tips_tricks: "Best option with **Claudia**\nUse her ability only for shatter or when u are sure that enemy wont run away from it (**Centaur, Lucia and Frost)**"
+# Simulacra
+shiro_1star: "Increase damage dealt to and all elemental shattering effects on targets within Full Bloom's range by 30%."
+shiro_2star: "Increase the current weapon's base ATK growth by 16%."
+shiro_3star: "Increase shatter by 15% and reset all weapon skill cooldowns upon shattering the target's shield. Can only be triggered once every 30 seconds."
+shiro_4star: "Increase the current weapon's base HP growth by 32%."
+shiro_5star: "Attacking a grievous target extends the duration of grievous by an additional 7 seconds (only take effect once for the same effect)."
+shiro_6star: "After using Full Bloom, grant a 100% crit chance for the next 8 seconds."
+shiro_1trait: "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by 10% and physical ATK by an additional 7% for 8 seconds. Cooldown: 16 seconds."
+shiro_2trait: "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by 16% and physical ATK by an additional 10% for 8 seconds. Cooldown: 16 seconds."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Frigg
 frigg_2piece: "Increase frost ATK by 8%/10%/12%/15% for 10 seconds when switching between frost weapons. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
 frigg_4piece: "When unleashing a frost domain with the weapon Balmung, enemies within the frost domain receive frost damage equal to 55%/65%/75%/85% of frost ATK every second."
+# Weapon
 frigg_desc: "Mainly DPS Buff character"
 frigg_weapon: "Balmung"
 frigg_ability: "Slash the space around the Wanderer, dealing total damage equal to 577.5% of ATK + 30. Can suspend and launch targets, and grant damage immunity while this skill is in use. 30-second cooldown. After unleashing Fimbulwinter, a large frost domain will be formed around you for 25 seconds. The number of dodges you can perform will not be deducted when you perform the Balmung dodge within the frost domain. Grant Domain of Frost I when you are in the frost domain, increase frost ATK by 15%, and shatter by 25% when using a frost weapon."
@@ -35,10 +56,22 @@ frigg_dodge: "Tap normal attack during the short perfect attack window to trigge
 frigg_attack_normal: "Initiate 5 attacks in a row with Balmung when on the ground."
 frigg_attack_hold: "While normal attacking, hold normal attack to trigger Soaring Slash. Lunge forward with a horizontal swipe, then launch the target into the air before soaring up with the target. Deal a maximum of 134.3% of ATK + 7 damage." 
 frigg_tips_tricks: "Best option with **Tsubasa or Meryl**\nWhen u are going frost team with Frigg always use her trait.\nFrigg discharge can stop time while u are casting which sometimes leads into good dps for carries.\nBest way to use Frigg is to spam dashes with left-click"
+# Simulacra
+frigg_1star: "Gain 1 frostiness point every time you deal 550% × Frost ATK of damage in the Frost Domain. Up to 10 points can be accumulated. When Frost Domain ends, frostiness points × Frost ATK × 95% of blast damage will be dealt to all enemies in the Frost Domain. After leaving the Frost Domain lose 1 frostiness point every 3 seconds."
+frigg_2star: "Increase the current weapon's base HP growth by 16%."
+frigg_3star: "The maximum frostiness is increased to 15 points. Unleashing discharge skills with frost weapons in the Frost Domain will deal 25% × Frost ATK of damage to all targets in the Frost Domain (Gain +5 frostiness points)."
+frigg_4star: "Increase the current weapon's base ATK growth by 32%."
+frigg_5star: "Shattering shields using frost weapons in the Frost Domain will freeze the target for 2 seconds and cause frostiness points × Frost ATK × 35% of additional damage (if the target cannot be frozen, double the additional damage dealt)."
+frigg_6star: "When frostiness reaches 15 points and you are in the Frost Domain, you will get an additional Domain of Frost II that increases Frost ATK by 25% when frost weapons are used."
+frigg_1trait: "Increase frost ATK by 1.5% every 3 seconds upon entering battle. Stack up to 10 times. Lasts for 5 seconds."
+frigg_2trait: "Frost ATK is boosted by 2.4% every 3 seconds upon entering combat. Stack up to 10 times. Lasts for 5 seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Claudia
 claudia_2piece: "Increase damage by 13%/17%/20%/23% when hitting a target in mid-air or initiating an aerial attack. Reset double-jump upon hitting the target in mid-air."
 claudia_4piece: "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by 1.5/2/2.5/3 seconds and increases the damage of discharge skills by 58%/80%/103%/126% for 15 seconds."
+# Weapon
 claudia_desc: "Mainly DPS Buff character"
 claudia_weapon: "Guren Blade"
 claudia_ability: "Dance through targets while swinging the blade, dealing damage equal to 418% of ATK + 22 in total to up to 5 targets (attack on the same target deal 20% less damage). At the end of the Skill, slash the space in front, dealing damage equal to 264% of ATK + 14 to targets, and suspend them. Immune to crowd-control effects while ability is in use, and all damage taken is reduced by 50%. Cooldown: 15 seconds."
@@ -47,10 +80,22 @@ claudia_dodge: "Tap normal attack during the short period after dodging to trigg
 claudia_attack_normal: "While on the ground, swing the blade to attack 5 times in a row."
 claudia_attack_hold: "Hold the normal attack button after normal attacks to trigger Cyclone. Upon hit, suspend the target and deal 47.8% of ATK + 3 to a single target." 
 claudia_tips_tricks: "Best option with **Shiro**\nUse her ability only when u are sure that enemy wont run away from it (**Centaur, Lucia and Frost)**"
+# Simulacra
+claudia_1star: "After hitting a target with a skill or discharge skill, grant 1 stack of the following buff: Increase damage dealt by 8% for 25 seconds, stacking up to 3 times for a maximum of 1 stack per skill use."
+claudia_2star: "Increase the current weapon's base ATK growth by 16%."
+claudia_3star: "When hitting a target with a skill or discharge skill, apply 1 stack of War Wounds to the target: Increase incoming physical damage and shatter from physical weapons by 10% for 15 seconds. Stack up to 1 time."
+claudia_4star: "Increase the current weapon's base HP growth by 32%."
+claudia_5star: "Hitting targets with skills or discharge skills grants Skill Damage Boost, which increases all weapon skill damage by 20% for 25 seconds. This effect cannot be stacked."
+claudia_6star: "Skills hitting the same target no longer have reduced damage. After using Guren Blade's skills or discharge skill, all targets with War Wounds within 8 meters gain another 1 stack of War Wounds."
+claudia_1trait: "Go invisible for 1 seconds upon dodging."
+claudia_2trait: "Go invisible for 1.5 seconds upon dodging."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Nemesis
 nemesis_2piece: "When a target is being healed, their volt ATK is increased by 8%/10%/12%/15% for 20 seconds. The effect does not stack, and only the highest level's effect is applied when obtained repeatedly."
 nemesis_4piece: "When healing yourself or your Electrode, the healed target gains a charge of Lightning. The next attack within 30 seconds will cast lightning upon the target, dealing volt damage equal to 240%/300%/360%/420% of volt ATK, and damage caused by electrodes is reduced by 50%. Cannot be triggered more than once in 10 seconds. Lightning charges do not stack. Only the highest levels effect is applied when obtained repeatedly."
+# Weapon
 nemesis_desc: "DPS Healer"
 nemesis_weapon: "Venus"
 nemesis_ability: "Venus fires a guided missile that explodes on contact with enemy targets, dealing damage equal to 233.2% of ATK + 12 and knocking down targets. 25-second cooldown."
@@ -59,10 +104,22 @@ nemesis_dodge: "Tap normal attack during the short perfect attack window to trig
 nemesis_attack_normal: "While on the ground, use Venus to attack 5 times in a row."
 nemesis_attack_hold: "Hold normal attack to charge a shot and release an electrified ball that explodes on hit, dealing damage equal to 118.4% of ATK + 6 to nearby enemies." 
 nemesis_tips_tricks: "Best option with **Samir or Crow**\nNemesis can be very strong while in air with her turrets.\nDashing backwards while attacking will summon slow buble which leads to easy sustain.\nNemesis was first released Limited character on global"
+# Simulacra
+nemesis_1star: "After using Pulse Lock or Particle Beam Burst, creates 1 Electrode that immediately grants the user 5 stacks of healing chain enhance. In addition, unleash a healing chain that heals nearby allies by 135% of the Wanderer's ATK."
+nemesis_2star: "Increase the current weapon's base ATK growth by 16%."
+nemesis_3star: "Every 6 seconds, the Electrode will unleash Ring Lightning, which deals damage equal to a maximum of 205% of ATK in a target area."
+nemesis_4star: "Increase the current weapon's base ATK growth by 32%."
+nemesis_5star: "After using Pulse Lock, increase the Wanderer's ATK by (5 + (Number of Electrodes × 5)) % for 25 seconds."
+nemesis_6star: "Up to 2 Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user."
+nemesis_1trait: "After summoning an Electrode, deal volt damage equal to 60% of ATK to all enemies within 30 meters of the Electrode and heal all allies (including the user) within its range by 120% of ATK."
+nemesis_2trait: "After summoning an Electrode, deal volt damage equal to 100% of ATK to all enemies within 30 meters of the Electrode and heal all allies (including the user) within its range by 200% of ATK."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Cobalt
 cobalt_2piece: "Increase damage against debuffed targets by 14%/16%/18%/20%."
 cobalt_4piece: "Restore 1 dodge attempt every 3 dodges. Dodge skills inflict burn upon hit, dealing damage equal to 24%/30%/36%/42% of ATK every 0.5 seconds for 4 seconds."
+# Weapon
 cobalt_desc: "DPS Shieldbreaker"
 cobalt_weapon: "Flaming Revolver"
 cobalt_ability: "Constant fire in a frontal cone area to deal 666% of ATK + 35 damage. Cooldown: 60 seconds."
@@ -71,11 +128,23 @@ cobalt_dodge: "Use normal attack right after dodging to trigger Close Quarters. 
 cobalt_attack_normal: "On the ground, use normal attack button to launch 5 attacks in a row."
 cobalt_attack_hold: "Tap and hold normal attack to charge a shot and release to fire rounds, dealing 95.4% of ATK + 5 damage, plus an explosion 3 seconds later or if the target dies), dealing 23.9% of ATK as damage to nearby enemies. Each time the target is dealt damage before the explosion (up to 4 times), AOE is doubled and damage is increased." 
 cobalt_tips_tricks: "Best option with **Huma or Zero**\nOne of few character that were buffed on global.\nGoing for Cobalt-B is only good if u have enough money to get her on s5.\nCobalt has super slow attackspeed so u have to play around it well"
+# Simulacra
+cobalt_1star: "When using the weapon skill, add 2% of the enemy's max HP as bonus damage, up to 200% of ATK."
+cobalt_2star: "Increase the current weapon's base ATK growth by 16%."
+cobalt_3star: "Using the skill or dodge attack on burning targets will additionally apply Ionic Burn, dealing 90% of ATK as Flame damage every second for 10 seconds."
+cobalt_4star: "Increase the current weapon's base ATK growth by 32%."
+cobalt_5star: "Ionic Burn damage increased to 140% and dodge attacks from any weapon will refresh the burn's duration."
+cobalt_6star: "The skill Barrage has a burning effect that lasts for 15 seconds. Hitting a target with any weapon's dodge attack reduces the cooldown of Barrage by 4 seconds, up to once every 1.5 seconds. Damage over time effects trigged from a dodge attack can also trigger the effect."
+cobalt_1trait: "When Cobalt-B releases a discharge skill, restore 50 - 120 points of energy charge at random."
+cobalt_2trait: "When Cobalt-B releases a discharge skill, restore 90 - 180 points of energy charge at random."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Coco
 coco_2piece: "Increase healing capability and healing received by 10%/12%/14%/16%."
 coco_4piece: "When you or your teammates are healed, increase ATK by 12.5%/15%/ 17.5%/20% for 6 seconds. Only the highest level's effect is applied when obtained repeatedly."
 hto_coco: "Fuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Cocoritter Matrix Box"
+# Weapon
 coco_desc: "Main Healer and Immunity granter"
 coco_weapon: "Absolute Zero"
 coco_ability: "Create a healing zone that moves with the Wanderer and heals nearby allies for 95% of ATK + 5/29/59/89/119/149/179/209/X once every 0.5 seconds for 6 seconds. 60—second cooldown."
@@ -84,11 +153,23 @@ coco_dodge: "Tap normal attack during the short perfect dodge window (tap an arr
 coco_attack_normal: "While on the ground, swing the staff to attack 5 times in a row."
 coco_attack_hold: "Tap and hold normal attack while airborne to trigger Moonfall. Upon landing, deal damage once every 0.2 seconds, for a total of 123.8% of ATK + 7/38/77/116/155/194/234/273/X damage." 
 coco_tips_tricks: "Best option with **Zero or Nemesis**\nWhen u are going to be healer always use Cocos trait\nCocos ability grants you immunity for 15sec.\nCoco is insanely good for catching people in pvp with her aa+aa+hold"
+# Simulacra
+coco_1star: "After dodging, summon a healing bee that follows the user and heals the ally with the lowest percentage of HP within 15 meters. Heal for 25% of ATK and restore 50 weapon charge points each time and last for 25 seconds. Cooldown: 25 seconds."
+coco_2star: "Increase the current weapon's base HP growth by 16%."
+coco_3star: "Use Sanctuary or discharge skills to remove debuffs from targets, can be used while being affected by control effects. Increase shatter and damage dealt for all teammates within range by 20%, and grant them immunity to control effects and shatter."
+coco_4star: "Increase the current weapon's base HP growth by 32%."
+coco_5star: "Increase healing effect by 15%, plus an additional 20% when healing targets with less than 60% HP."
+coco_6star: "Whenever a healing bee is summoned or disappears from battle, heal all allies for 100% of the user's ATK. All allies within 10 meters of the healing bee also gain 15% all damage and healing boost (cannot stack)."
+coco_1trait: "When Cocoritter uses a support weapon, increase healing effects she inflicts on others and receives by 20%."
+coco_2trait: "When Cocoritter uses a support weapon, increase healing and healing received by 20%. And when Cocoritter uses a support-type weapon's discharge skill or weapon skill, increase nearby allies' ATK by 15% for 5."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Huma
 huma_2piece: "Hitting targets with dodge skills inflicts bleed, dealing damage equal to 15%/19%/22.5%/26% of ATK every second for 5 seconds."
 huma_4piece: "Reduce ATK of all targets within 8 meters that are taking damage over time by 10%/12%/13%/15%. Only the highest level's effect is applied when obtained repeatedly."
 hto_huma: "Drop from Frost Bot\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Huma Matrix Box"
+# Weapon
 huma_desc: "Tank and Shieldbreaker"
 huma_weapon: "Molten Shield v2"
 huma_ability: "Shield Conversion: Switch from shield form to axe form and smash the ground, dealing damage equal to 373.8% of ATK + 587 and strongly suspends the target. Leave a large flame zone for 5 seconds that burns the target, dealing continuous damage equal to 233.6% of ATK + 367. Axe Conversion: Switch from axe form to shield form and slam it to the ground, dealing damage equal to 309.5% of ATK + 486 to the target and knocking them back. Prevent the target from switching weapons for 5 seconds. Cooldown: 25 seconds. Shield Conversion, and Axe Conversion share a cooldown."
@@ -97,11 +178,23 @@ huma_dodge: "Swing an axe to deal damage equal to 226.3% of ATK + 356, and reduc
 huma_attack_normal: "While on the ground, swing the shield axe to attack 4 times in a row."
 huma_attack_hold: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Air Branch attacks." 
 huma_tips_tricks: "Best option with **Cobalt or Meryl**\nBest ShieldBreaker in ToF.\nHuma can stack both deffense and attack."
+# Simulacra
+huma_1star: "Gain a stack of Strong Shield upon casting Discharge: Seething Rage. Using a dodge skill or branch skill while in shield form grants a stack of Strong Shield, which grants 10% damage reduction for 15 seconds and stacks up to 3 times. Switching to axe form converts all Strong Shield stacks to Sharp Axe stacks, each of which increases damage dealt by 15% for 15 seconds. Switching to a different weapon cancels this effect."
+huma_2star: "Increase the current weapon's base HP growth by 16%."
+huma_3star: "While in shield form, branch/dodge attacks deal additional damage to targets equal to 4% of the user's current HP."
+huma_4star: "Increase the current weapon's base ATK growth by 32%."
+huma_5star: "After switching to a shield axe, immediately grant 30% damage reduction that diminishes by 10% every 3 seconds, down to a minimum of 10%. Switching weapons cancels this effect. Cooldown: 30 seconds."
+huma_6star: "Enhance conversion skills. Shield Conversion Enhancement: Increase damage dealt by 60% and expand the radius of the flame zone by 30%. Axe Conversion Enhancement: Does not share cooldown with Shield Conversion. For the next 5 seconds after using this skill, turns all damage received into HP (up to a maximum of 15% of the user's Max HP)."
+huma_1trait: "Each time Huma receives damage, gain 1 Fortitude mark and gain 1 more Fortitude mark if it is flame damage, up to 1 time per 1 second and 12 stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks × 0.4% HP for 12 seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks × 0.6% HP."
+huma_2trait: "Each time Huma receives damage, gain 1 Fortitude mark and gain 1 more Fortitude mark if it is flame damage, up to 1 time per 1 second and 12 stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks × 0.6% HP for 12 seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks × 0.9% HP."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Crow
 crow_2piece: "Increase crit damage to targets with less than 60% HP by 24%/30%/36%/42%."
 crow_4piece: "Crits deal additional damage over time equal to 18%/22%/26%/30% of ATK every second for 5 seconds. Does not stack."
 hto_crow: "Drop from Sobek\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Crow Matrix Box"
+# Weapon
 crow_desc: "Main DPS and Immunity granter"
 crow_weapon: "Thunderblades"
 crow_ability: "Fire 6 returning blades, each dealing damage equal to 52.8% of ATK + 3. Gains hyperbody for up to 8 seconds, and the effect is removed when the blades return. 45 -second cooldown."
@@ -110,11 +203,23 @@ crow_dodge: "Tap normal attack during the short perfect dodge window (tap an arr
 crow_attack_normal: "While on the ground, swing the dual blades to attack 5 times in a row."
 crow_attack_hold: "After the third normal attack, hold the normal attack button to trigger Rapid Lunge. Upon hit, strongly suspend the target, dealing total damage equal to 116.8% of ATK + 6." 
 crow_tips_tricks: "Best option with **Samir or Nemesis**\nAfter the nerfs in patch 1.5 Crow isnt worth abusing with Jetpack.\nAttacking enemies from behind will increase your final dmg.\nCrow was first victim of global renaming his new name is Cuervo"
+# Simulacra
+crow_1star: "Attacking targets from behind increases crit rate of all dual blades attacks by 40%. Backstabbing an electrified target increases crit rate by 100% and crit damage by 30%."
+crow_2star: "Increase the current weapon's base ATK growth by 16%."
+crow_3star: "Increase damage by 30% to targets with less than 60% HP."
+crow_4star: "Increase the current weapon's base HP growth by 32%."
+crow_5star: "Triggering a Back Attack grants a 100% crit chance for the next 4 seconds and increases crit damage by 50%. Cooldown: 10 seconds."
+crow_6star: "After using a skill, increase volt damage dealt to the target by 20% for 20 seconds."
+crow_1trait: "When Crow is not in a team, increase damage dealt by 6% and reduce damage received by 4%."
+crow_2trait: "When Crow is not in a team, increase damage dealt by 10% and reduce damage received by 6% When Crow enters combat, increase damage dealt by 12% for 12 seconds."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # King
 king_2piece: "When a target is shattered, grant 8%/10%/12%/14% damage boost for 25 seconds. Only the highest level's effect is applied when obtained repeatedly."
 king_4piece: "When there are more than 2 enemies around, hit restore HP equal to 14%/18%/22%/26% of damage dealt upon attacking. The maximum HP restored every 0.5 seconds must not exceed 36%/ of ATK."
 hto_king: "Drop from King\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen King Matrix Box"
+# Weapon
 king_desc: "AOE Shieldbreaker"
 king_weapon: "Scythe of the Crow"
 king_ability: "Swing the scythe, dealing damage equal to 499.9% of ATK + 26. Cooldown: 45 seconds."
@@ -123,11 +228,23 @@ king_dodge: "Tap normal attack during the short perfect dodge window (tap an arr
 king_attack_normal: "While on the ground, swing the scythe to launch 5 consecutive attacks."
 king_attack_hold: "Tap and hold normal attack while airborne (or tap when a target is selected), or tap normal attack while climbing, jumping backward, or using the Jetpack to trigger Asunder. While falling, deal damage equal to 12.5% of ATK + 1 each hit. Upon landing, deal damage equal to 71.9% of ATK + 4 and deliver a knockdown." 
 king_tips_tricks: "Best option with **Any DPS or Cobalt-B**\nOne of the most useless characters in ToF.\nGetting King on s6 is the last thing u would like to do.\nKing can be useful for big horde of enemies otherwise his whole kit is pointless"
+# Simulacra
+king_1star: "Increase shatter by 15%. After shattering the target's shield, deal burn damage equal to 120% of ATK to the target every second for 15 seconds."
+king_2star: "Increase the current weapon's base HP growth by 16%."
+king_3star: "Increase damage dealt by 10% for each enemy within 6 meters, up to a maximum of 30%."
+king_4star: "Increase the current weapon's base ATK growth by 32%."
+king_5star: "Increase damage dealt against HP shields or shielded enemies by 100%."
+king_6star: "Increase damage dealt by 10% for each enemy slain for 30 seconds. Stack up to 3 times."
+king_1trait: "Every 7 enemies killed by KING restores HP equal to 8% of Max HP."
+king_2trait: "Every 5 enemies killed by KING restores HP equal to 10% of Max HP."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Meryl
 meryl_2piece: "If HP is less than 30% after being attacked, gain a shield equal to 20%/26%/32%/40% of Max HP for 10 seconds. Cooldown: 90 seconds."
 meryl_4piece: "Increase Whirlwind's damage by 36%/45%/54%/63% and restore HP equal to 30%/38%/44%/50% of the damage dealt while Whirlwind is active. The maximum HP restored every 0.5 seconds cannot exceed 60%/72%/81%/90% of ATK."
 hto_meryl: "Drop from Barbarossa\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Meryl Matrix Box"
+# Weapon
 meryl_desc: "Main DPS"
 meryl_weapon: "Rosy Edge"
 meryl_ability: "Swing the greatsword to launch sword auras forward, each dealing damage equal to 141.7% of ATK + 7 and increasing damage dealt by 5% with each hit. While active, immune to control effects. Cooldown: 45 seconds."
@@ -136,11 +253,23 @@ meryl_dodge: "Tap normal attack during the short period after dodging to trigger
 meryl_attack_normal: "While on the ground, swing a greatsword to attack 4 times in a row."
 meryl_attack_hold: "After the third normal attack, hold normal attack to trigger Rising Slash. Upon hit, strongly suspend the target and go airborne, dealing damage equal to 64.3% of ATK + 3." 
 meryl_tips_tricks: "Best option with **Tsubasa or Frigg**\nWhile using Meryl only use her hold attack or ability.\nIf u are fighting Boss that tends to running away always lock them in your cage before they try to pefrom their movement ability.\nMeryl may be tank but her main power is her dps and immunity so try to play around that"
+# Simulacra
+meryl_1star: "Increase shatter by 15% and restore 10% of HP after shattering the target's shield."
+meryl_2star: "Increase the current weapon's base HP growth by 16%."
+meryl_3star: "Upon switching to the weapon, gain an Ice Shield equal to 10% of Max HP. Cooldown 20 seconds. The Ice Shield lasts up to 10 seconds."
+meryl_4star: "Increase the current weapon's base HP growth by 32%."
+meryl_5star: "Increase damage and shatter by 50% while the shield is active."
+meryl_6star: "Upon switching to the weapon, gain an Ice Shield equal to 20% of Max HP and immmune to controls when shield is active. Cooldown: 20 seconds. The Ice Shield lasts up to 10 seconds."
+meryl_1trait: "Reduce frost damage received by Meryl by 20%, gain immunity to the frostbitten effect, and reduce duration of being frozen by 50%."
+meryl_2trait: "Reduce frost damage received by Meryl by 25%, gain immunity to the frostbitten effect, and reduce duration of being frozen by 50%. Meryl's surroundings will freeze."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Samir
 samir_2piece: "Increase damage progressively by 1% upon hitting a target. Stack up to 10/13/16/20 times. Last for 1.5 seconds."
 samir_4piece: "Increase Dual EM Stars' electrical explosion damage by 16%/22%/30%/40% of ATK."
 hto_samir: "Drop from Interdimensional Frostfire Dragon\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Samir Matrix Box"
+# Weapon
 samir_desc: "Main DPS"
 samir_weapon: "Dual EM Stars"
 samir_ability: "Perform a backflip and fire 3 piercing shots, with the main shot deals damage equal to 269.8% of ATK + 14, and the other two shots deal 60% damage. In addition, knock targets back and stun them for 5 seconds if they collide with an obstacle. Cooldown: 12 seconds."
@@ -149,11 +278,23 @@ samir_dodge: "Tap normal attack after dodging to strongly suspend targets and de
 samir_attack_normal: "While on the ground, tap normal attack to attack 5 times in a row."
 samir_attack_hold: "Hold attack button to maintain constant fire, each hit dealing 23% of ATK + 1 base damage." 
 samir_tips_tricks: "Best option with **Nemesis**\nOne of the most useless characters in ToF.\nGetting Samir on s6 is the last thing u would like to do.\nSamir was proclaimed to be the best character even tho her whole kit is bad and her dps is even lower than Cocos"
+# Simulacra
+samir_1star: "Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to 30% of ATK to the target and nearby enemies. Cooldown: 0.2 seconds."
+samir_2star: "Increase the current weapon's base ATK growth by 16%."
+samir_3star: "Increase crit rate to electrified targets by 40%. Electrical explosions extend the duration of electrified effects by 0.5 seconds, up to a maximum of 5 seconds."
+samir_4star: "Increase the current weapon's base ATK growth by 32%."
+samir_5star: "Double the duration of Electro Field and pull targets into the center of the attack."
+samir_6star: "Triggering an electrical explosion reduces skill cooldowns by 1 second."
+samir_1trait: "Grant 1 stack of Concentration for every 4 seconds when Samir receives no damage. Each stack increases damage dealt by 3%, and can stack up to 4 times. After being hit, Samir loses 1 stack of Concentration, up to 1 stack per 1 second."
+samir_2trait: "Grant 1 stack of Concentration for every 4 seconds when Samir receives no damage. Each stack increases damage dealt by 4%, and can stack up to 5 times. After being hit, Samir loses 1 stack of Concentration, up to 1 stack per 2 second."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Tsubasa
 tsubasa_2piece: "Increase damage dealt by 14%/16%18%/20% when there are no enemies within 4 meters."
 tsubasa_4piece: "Upon a headshot or using Icewind Arrow: Piercing Shot, increase ATK by 15%/18%/21%/25% for 8 seconds."
 hto_tsubasa: "Drop from Apophis\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Tsubasa Matrix Box"
+# Weapon
 tsubasa_desc: "Mainly DPS Buff character"
 tsubasa_weapon: "Icewind Arrow"
 tsubasa_ability: "Perform a backflip and fire 3 piercing shots, with the main shot deals damage equal to 258.3% of ATK + 14, and the other two shots deal 60% damage. In addition, knock targets back and stun them for 5 seconds if they collide with an obstacle. Cooldown: 12 seconds."
@@ -162,11 +303,23 @@ tsubasa_dodge: "Tap attack after dodging to trigger a Loaded Arrow, which knocki
 tsubasa_attack_normal: "While on the ground, draw the bow repeatedly to attack 5 times."
 tsubasa_attack_hold: "After any normal attack, hold the normal attack button to unleash Arrow Rain, dealing up to 287.2% of ATK + 15 area damage to targets." 
 tsubasa_tips_tricks: "Best option with **Meryl or Frigg**"
+# Simulacra
+tsubasa_1star: "Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by 5% for 15 seconds. Stack up to 3 times."
+tsubasa_2star: "Increase the current weapon's base ATK growth by 16%."
+tsubasa_3star: "Launching a Dodge attack fires 3 Charged Arrows."
+tsubasa_4star: "Increase the current weapon's base ATK growth by 32%."
+tsubasa_5star: "Double duration of Arrow Rain and slow targets by 25%."
+tsubasa_6star: "Sharp Arrow stacks up to 5 times. Hitting a target with Charged Arrow immediately grants 3 stacks, headshots grant 5 stacks."
+tsubasa_1trait: "Each time Tsubasa deals damage, gain 1 stack of Fierce Strike, up to 1 stack per 1 second. Each stack adds 0.5% ATK, up to 15 stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for 30 seconds."
+tsubasa_2trait: "Each time Tsubasa deals damage, gain 1 stack of Fierce Strike, up to 1 stack per 1 second. Each stack adds 0.6% ATK, up to 30 stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for 30 seconds."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 # Zero
 zero_2piece: "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150%/200%/250%/300% of ATK for 6 seconds."
 zero_4piece: "While the shield is active, you and your teammates deal 16%/20%/24%/28% more damage."
 hto_zero: "Drop from Devourer\nFuse from Workshop\nReward from Joint Operation\nReward from Void Rifts\nObtain from Matrix Special Orders\nOpen Zero Matrix Box"
+# Weapon
 zero_desc: "Healer and Shielder"
 zero_weapon: "Negating Cube"
 zero_ability: "Create shielding for self and nearby allies to block up to 800% of ATK in damage for 10 seconds, and deal 142.9% of ATK + 8 damage to nearby targets and launch them. Each cube in possession when this skill is used adds 160% of ATK to max shielding and exhaust the cube. Cooldown: 60 seconds."
@@ -175,3 +328,13 @@ zero_dodge: "Dodge right before getting hit to trigger a Phantasia, which reduce
 zero_attack_normal: "While on the ground, manipulate the cube to attack 5 times in a row."
 zero_attack_hold: "On the third normal attack, hold the normal attack button to trigger Omnium Shock. A pillar of energy launches nearby targets into the air, dealing damage equal to 68.4% of ATK + 4. The pillar lasts 5 seconds and deals damage equal to 28.5% of ATK + 2 to nearby targets every second." 
 zero_tips_tricks: "Best option with **Cobalt or Coco**\nWith Coco hes currently the best healer.\nS5 Zero can drop DMG BOOST orbs.\nZero has highest Charge in ToF.\nZero can reset his jump 5 times thanks to his cube after that hes no longer to perform that unless he gets rid of the cubes"
+# Simulacra
+zero_1star: "Deal damage and produce a healing orb, which lasts for 20 seconds and restore HP of any teammate who picks it up equal to 60% of ATK. 2-second cooldown."
+zero_2star: "Increase the current weapon's base ATK growth by 16%."
+zero_3star: "Reduce skill cooldown from 60 seconds to 30 seconds. Restore HP equal to 30% of ATK every second while the shield is active."
+zero_4star: "Increase the current weapon's base HP growth by 32%."
+zero_5star: "Damaging a target also produces a damage orb, which lasts for 20 seconds and increases all damage and healing of any teammate who picks it up by 2% for 30 seconds. Stack up to 10 times. Skill cooldown is 2.5 seconds."
+zero_6star: "Using a Skill grants allies healing orbs and damage orbs equal to the number of Omnium Cubes."
+zero_1trait: "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by 1.5 seconds. Can only activate for the same weapon 1 time every 5 seconds."
+zero_2trait: "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by 3 seconds. Can only activate for the same weapon 1 time every 5 seconds."
+############################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
