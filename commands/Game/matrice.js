@@ -170,6 +170,7 @@ run: async (interaction, client, user, language) => {
         case "Zero":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/zero2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/zeromatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "zero_2piece")}` },
