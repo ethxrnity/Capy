@@ -159,7 +159,7 @@ run: async (interaction, client, user, language) => {
           break;
 
           case "Crow":
-          simulacra.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/crow3.webp");
+          simulacra.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/crow3.png");
           simulacra.addFields(
 
             { name: `${client.i18n.get(language, "game", "1star")}`, value: `${client.i18n.get(language, "game", "crow_1star")}`},
