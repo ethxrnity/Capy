@@ -1,6 +1,5 @@
 const { ApplicationCommandOptionType, EmbedBuilder } = require("discord.js");
-const client = require('nekos.life');
-const neko = new client();
+const axios = require('axios')
 
 module.exports = {
   name: ["kiss"],
@@ -17,7 +16,7 @@ module.exports = {
 
 run: async (interaction, client, user, language) => {    
 
-    var kissapi = await neko.kiss()
+    const result = await axios.get('https://api.otakugifs.xyz/gif?reaction=kiss&format=gif')
     const receiver = interaction.options.getUser("receiver"); 
 
     const kiss = new EmbedBuilder()
@@ -27,7 +26,7 @@ run: async (interaction, client, user, language) => {
         text: `Request from ${interaction.user.username}`,
         iconURL: interaction.user.displayAvatarURL(),
       })
-      .setImage(kissapi.url)
+      .setImage(result.data.url)
       .setTimestamp();
 
 
