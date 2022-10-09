@@ -48,6 +48,7 @@ run: async (interaction, client, user, language) => {
         case "Shiro":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/shiro2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/shiromatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "shiro_2piece")}` },
@@ -58,6 +59,7 @@ run: async (interaction, client, user, language) => {
         case "Frigg":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/frigg2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/friggmatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "frigg_2piece")}` },
@@ -68,6 +70,7 @@ run: async (interaction, client, user, language) => {
         case "Nemesis":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/nemesis2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/nemesismatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "nemesis_2piece")}` },
@@ -78,6 +81,7 @@ run: async (interaction, client, user, language) => {
         case "Claudia":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/claudia2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/claudiamatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "claudia_2piece")}` },
@@ -88,6 +92,7 @@ run: async (interaction, client, user, language) => {
         case "Cobalt-B":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/cobalt-b.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/cobaltmatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "cobalt_2piece")}` },
@@ -100,6 +105,7 @@ run: async (interaction, client, user, language) => {
         case "Cocoritter":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/cocoritter2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/cocomatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "coco_2piece")}` },
@@ -110,6 +116,7 @@ run: async (interaction, client, user, language) => {
         case "Huma":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/huma2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/humamatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "huma_2piece")}` },
@@ -120,6 +127,7 @@ run: async (interaction, client, user, language) => {
         case "Crow":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/crow2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/crowmatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "crow_2piece")}` },
@@ -130,6 +138,7 @@ run: async (interaction, client, user, language) => {
         case "King":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/king2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/kingmatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "king_2piece")}` },
@@ -140,6 +149,7 @@ run: async (interaction, client, user, language) => {
         case "Meryl":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/meryl2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/merylmatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "meryl_2piece")}` },
@@ -150,6 +160,7 @@ run: async (interaction, client, user, language) => {
         case "Samir":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/samir2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/samirmatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "samir_2piece")}` },
@@ -160,6 +171,7 @@ run: async (interaction, client, user, language) => {
         case "Tsubasa":
           matrice.setTitle(`${character} ${client.i18n.get(language, "game", "matrix_set")}`)
           matrice.setThumbnail("https://hodnoceni-ucitelu.fun/core/img/Capy/tsubasa2.webp");
+          matrice.setImage("https://hodnoceni-ucitelu.fun/core/img/Capy/tsubasamatrice.png")
           matrice.addFields(
 
             { name: `${client.i18n.get(language, "game", "2piece")}`, value: `${client.i18n.get(language, "game", "tsubasa_2piece")}` },
