@@ -19,6 +19,10 @@ module.exports = {
                 {
                     name: "th",
                     value: "th"
+                },
+                {
+                    name: "ru",
+                    value: "ru"
                 }
             ]
             
