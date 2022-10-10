@@ -17,10 +17,6 @@ module.exports = {
                     value: "en"
                 },
                 {
-                    name: "th",
-                    value: "th"
-                },
-                {
                     name: "ru",
                     value: "ru"
                 }
