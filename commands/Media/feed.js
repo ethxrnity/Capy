@@ -8,7 +8,7 @@ module.exports = {
   category: "Media",
   options: [
     {
-        name: "receiver",
+        name: "target",
         description: "Select user that will recieve your food",
         type: ApplicationCommandOptionType.User,
         required: true,
@@ -18,11 +18,11 @@ module.exports = {
 run: async (interaction, client, user, language) => {    
 
     var feedapi = await neko.feed()
-    const receiver = interaction.options.getUser("receiver");
+    const target = interaction.options.getUser("target");
 
     const feed = new EmbedBuilder()
       .setColor(client.color)
-      .setDescription(`**${interaction.user}** ${client.i18n.get(language, "media", "food")} ${receiver}`)
+      .setDescription(`**${interaction.user}** ${client.i18n.get(language, "media", "food")} ${target}`)
       .setFooter({
         text: `Request from ${interaction.user.username}`,
         iconURL: interaction.user.displayAvatarURL(),

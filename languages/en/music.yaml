@@ -1,31 +1,20 @@
 ### 247 command
-247_loading: "Loading please wait..."
-247_off: "`🌙` | *Mode 24/7 has been:* `Deactivated`"
-247_on: "`🌕` | *Mode 24/7 has been:* `Activated`"
+247_off: "\n<:moyaiguitar:1029768365390168104>**Well.. looks like someone doesnt like my feature?**\n\nI think u used this command without knowing what will be the after come. U should better turn it on back before i leak your Explorer history with all the hacks from 2010"
+247_on: "\n<:mariachiflushed:1029768358620582000>**Truly right decision, thats why u use me!**\n\nIf u dont want to use my super feature anymore just turn it off with the same command. But i dont recommend that, only people without taste do that"
 
 ### Autoplay command!
-autoplay_loading: "Loading please wait..."
-autoplay_off: "`📻` | *Autoplay has been:* `Deactivated`"
-autoplay_on: "`📻` | *Autoplay has been:* `Activated`"
+autoplay_off: "\n<a:losecontrol:1029771915872706674>**Im not really a fan of this function anyways**\n\nNot allowing others to use my super features is a sin. I recommend using this bot only in the worst cases or if u cant find a good playlist (Or boomer case)"
+autoplay_on: "\n<a:losecontrol:1029771915872706674>**Nice, u found this cool feature!**\n\nThis function allows you to listen to random songs from YouTube library. I hope u wont dislike my taste and maybe find a new song to your current playst"
 
 ### Clearqueue command!
-clearqueue_loading: "Loading please wait..."
-clearqueue_msg: "`📛` | *Queue has been:* `Cleared`"
-
-### Forward command!
-forward_loading: "Loading please wait..."
-forward_msg: "`⏭` | *Forward to:* `%{duration}`"
-forward_beyond: "Cannot forward beyond the song's duration."
-forward_invalid: "Invalid argument, must be a number.\nCorrect Usage: `%{prefix}forward <seconds>`"
+clearqueue_msg: "\n<a:9889pain:1029822106369794110>**The queue was successfully cleared**\n\nQueue was cleared of the song polutions and is back to normal. Please bare in mind that adding polution into queue wont fix your irl issues"
 
 ### Join command!
-join_loading: "Loading please wait..."
-join_voice: "You need to be in a voice channel to use the join command."
-join_msg: "`🔊` | *Joined:* `%{channel}`"
+join_voice: "\nIm sorry to tell u that u are using this command while not being in channel.\nIf u wish to use this command please first join some channel."
+join_msg: "\n**Successfully joined your channel!**\n\nChannel name: **%{channel}**\nChanged by: %{user}"
 
 ### Leave command!
-leave_loading: "Loading please wait..."
-leave_msg: "`🚫` | *Left:* | `%{channel}`"
+leave_msg: "\n**Successfully left your channel!**\n\nChannel name: **%{channel}**\nKicked by: %{user}"
 
 ### Loop command!
 loop_loading: "Loading please wait..."
@@ -34,11 +23,6 @@ unloop_current: "`🔁` | *Song is unloop:* `Current`"
 loop_all: "`🔁` | *Song is loop:* `All`"
 unloop_all: "`🔁` | *Song is unloop:* `All`"
 
-### Loopall command!
-loopall_loading: "Loading please wait..."
-loopall: "`🔁` | *Song is loop:* `All`"
-unloopall: "`🔁` | *Song is unloop:* `All`"
-
 ### Lyrics command!
 lyrics_loading: "Searching for lyrics..."
 lyrics_notfound: "Couldn't find any lyrics for provided song!"
@@ -46,8 +30,6 @@ lyrics_title: "Lyrics for %{song}"
 lyrics_toolong: "Lyrics too long to display!"
 
 ### Nowplaying command!
-np_loading: "Loading please wait..."
-
 np_title: "Now playing..."
 np_title_pause: "Song paused..."
 np_icon: "https://cdn.discordapp.com/emojis/741605543046807626.gif"
@@ -88,8 +70,8 @@ pause_msg: "`⏯` | *Song has been:* `%{pause}`"
 ### Play command!
 play_loading: "Loading please wait..."
 play_invoice: "You need to be in a voice channel to use command."
-play_join: "I don't have permission to join your voice channel."
-play_speak: "I don't have permission to speak in your voice channel."
+play_join: "\nIm terribly sorry but i lack the permission `CONNECT`. Without that im not able to join a voice-channel"
+play_speak: "\nIm terribly sorry but i lack the permission `SPEAK`. Without that im not able to speak in a voice-channel"
 play_arg: "Please provide a song name or link to search."
 play_startwith: "Please use link to play music."
 
@@ -112,21 +94,11 @@ queue_footer: "Page • %{page}/%{pages} | %{queue_lang} • Song | %{duration} 
 queue_notnumber: "Page must be a number."
 queue_page_notfound: "There are only %{page} pages available."
 
-### Replay command!
-replay_loading: "Loading please wait..."
-replay_msg: "`⏮` | *Song has been:* `Replayed`"
-
 ### Resume command!
 resume_loading: "Loading please wait..."
 resume_switch_pause: "Paused"
 resume_switch_resume: "Resumed"
 resume_msg: "`⏯` | *Song has been:* `%{resume}`"
-
-### Rewind command!
-rewind_loading: "Loading please wait..."
-rewind_msg: "`⏮` | *Rewind to:* `%{duration}`"
-rewind_beyond: "Cannot rewind beyond the song's duration."
-rewind_invalid: "Invalid argument, must be a number.\nCorrect Usage: `%{prefix}rewind <seconds>`"
 
 ### Search command!
 search_loading: "Loading please wait..."
@@ -146,12 +118,6 @@ search_playlist: "**Queued • [%{title}](%{url})** `%{duration}` (%{songs} trac
 search_fail: "Error loading track failed"
 search_match: "Error song not matches"
 
-### Seek command!
-seek_loading: "Loading please wait..."
-seek_invalid: "Invalid number. Please provide a number in seconds.\nCorrect Usage: `%{prefix}seek <seconds>`"
-seek_beyond: "Cannot seek beyond length of song."
-seek_msg: "`⏭` | *Seeked to:* `%{duration}`"
-
 ### Shuffle command!
 shuffle_loading: "Loading please wait..."
 shuffle_msg: "`🔀` | *Queue has been:* `Shuffled`"
@@ -159,13 +125,6 @@ shuffle_msg: "`🔀` | *Queue has been:* `Shuffled`"
 ### Skip command!
 skip_loading: "Loading please wait..."
 skip_msg: "`⏭` | *Song has been:* `Skipped`"
-
-### Skipto command!
-skipto_loading: "Loading please wait..."
-skipto_invalid_position: "Invalid number"
-skipto_arg: "Cannot skip to a song that is already playing. To skip the current playing song type: `%{prefix}skip`"
-skipto_invalid: "The song number is invalid."
-skipto_msg: "`⏭` | *Song has been:* `Skipto %{position}`"
 
 ### Volume command!
 volume_loading: "Loading please wait..."
@@ -193,14 +152,6 @@ playtop_result: "**Shifted • [%{title}](%{url})** `%{duration}` • %{request}
 playtop_fail: "Error loading track failed"
 playtop_match: "Error song not matches"
 
-### RemoveTrack command!
-removetrack_loading: "Loading please wait..."
-
-removetrack_already: "Cannot remove a song that is already playing."
-removetrack_notfound: "Song not found."
-
-removetrack_desc: "**Removed • [%{name}](%{url})** `%{duration}` • %{request}"
-
 ### Move command!
 move_loading: "Loading please wait..."
 
@@ -208,31 +159,3 @@ move_already: "Cannot remove a song that is already playing."
 move_notfound: "Song not found."
 
 move_desc: "**Moved • [%{name}](%{url})** to %{pos}"
-
-### SearchSkip command!
-searchskip_loading: "Loading please wait..."
-
-searchskip_title: "Song Selection..."
-searchskip_select: "**(%{num}.) [%{title}](%{url})** `%{duration}` Author: `%{author}`"
-searchskip_footer: "Please select a song in 30 seconds."
-searchskip_no_response: "No response."
-
-searchskip_result: "**Skipped • [%{title}](%{url})** `%{duration}` • %{request}"
-searchskip_playlist: "**Skipped • [%{title}](%{url})** `%{duration}` (%{songs} tracks) • %{request}"
-
-searchskip_fail: "Error loading track failed"
-searchskip_match: "Error song not matches"
-
-### SearchTop command!
-searchtop_loading: "Loading please wait..."
-
-searchtop_title: "Song Selection..."
-searchtop_select: "**(%{num}.) [%{title}](%{url})** `%{duration}` Author: `%{author}`"
-searchtop_footer: "Please select a song in 30 seconds."
-searchtop_no_response: "No response."
-
-searchtop_result: "**Shifted • [%{title}](%{url})** `%{duration}` • %{request}"
-searchtop_playlist: "**Shifted • [%{title}](%{url})** `%{duration}` (%{songs} tracks) • %{request}"
-
-searchtop_fail: "Error loading track failed"
-searchtop_match: "Error song not matches"

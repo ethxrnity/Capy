@@ -1,7 +1,9 @@
 ##### Need to join voice channel to use command! #####
 
 # No song playing in guild!
-no_player: "No song/s currently playing within this guild."
+no_player_title: "<:pepejeer:1029460056263110676> Seems like u did something wrong, again.."
+no_player: "\nIm sorry to tell u that u are using this command without Capy being in channel.\nIf u wish to use this command please let Capy join some channel first.\n\nBtw if u are executing this command just to disconnect the bot from channel to other people u should twice about what are u going to do! **__Its not nice to troll people like that__**"
 
 # Need to join voice & same voice to use command!
-no_voice: "You need to be in a same/voice channel."
+no_voice_title: "<:pepejeer:1029460056263110676> Seems like u did something wrong, again.."
+no_voice: "\nIm sorry to tell u that u are using this command while not being with Capy in the same channel.\n\nIf u wish to use this command please join that channel first. Btw if u are executing this command just to disconnect the bot from channel to other people u should twice about what are u going to do! **__Its not nice to troll people like that__**"

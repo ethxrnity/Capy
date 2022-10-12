@@ -71,7 +71,7 @@ module.exports = {
                 }
             } else {
                 const embed = new EmbedBuilder()
-                    .setAuthor({ name: `${client.i18n.get(language, "nopremium", "premium_author")}`, iconURL: client.user.displayAvatarURL() })
+                    .setTitle(`${client.i18n.get(language, "nopremium", "premium_title")}`)
                     .setDescription(`${client.i18n.get(language, "nopremium", "premium_desc")}`)
                     .setColor(client.color)
                     .setTimestamp()

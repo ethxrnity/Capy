@@ -9,12 +9,23 @@ module.exports = {
      */
     run: async (interaction, client, user, language) => {
         await interaction.deferReply({ ephemeral: false });
-        const msg = await interaction.editReply(`${client.i18n.get(language, "music", "leave_loading")}`);
-
         const player = client.manager.get(interaction.guild.id);
-		if (!player) return msg.edit(`${client.i18n.get(language, "noplayer", "no_player")}`);
+
+		if (!player) return interaction.reply({ embeds: [noplayer]});
         const { channel } = interaction.member.voice;
-        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return msg.edit(`${client.i18n.get(language, "noplayer", "no_voice")}`);
+        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.reply({ embeds: [novoice] });
+
+        const noplayer = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+        const novoice = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
 
         await player.destroy();
         await client.UpdateMusic(player);
@@ -23,8 +34,8 @@ module.exports = {
             .setDescription(`${client.i18n.get(language, "music", "leave_msg", {
                 channel: channel.name
             })}`)
-            .setColor(client.color);
+            .setColor(client.color);    
 
-        msg.edit({ content: " ", embeds: [embed] })
+        interaction.reply({ embeds: [embed] })
     }
 }

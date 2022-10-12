@@ -7,15 +7,25 @@ module.exports = {
     category: "Filter",
     run: async (interaction, client, user, language) => {
         await interaction.deferReply({ ephemeral: false });
+    try {
+      if (user && user.isPremium) {    
+        const player = client.manager.get(interaction.guild.id);
 
-        const msg = await interaction.editReply(`${client.i18n.get(language, "filters", "filter_loading", {
-            name: "bass"
-            })}`);
+        const noplayer = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
 
-            const player = client.manager.get(interaction.guild.id);
-            if(!player) return msg.edit(`${client.i18n.get(language, "noplayer", "no_player")}`);
-            const { channel } = interaction.member.voice;
-            if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return msg.edit(`${client.i18n.get(language, "noplayer", "no_voice")}`);
+        const novoice = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+		if (!player) return interaction.editReply({ embeds: [noplayer]});
+        const { channel } = interaction.member.voice;
+        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.editReply({ embeds: [novoice] });
     
             const data = {
                 op: 'filters',
@@ -40,14 +50,29 @@ module.exports = {
             
             await player.node.send(data);
 
+            
+
         const bassed = new EmbedBuilder()
             .setDescription(`${client.i18n.get(language, "filters", "filter_on", {
-                name: "bass"
+                name: "bass", user: interaction.user
             })}`)
             .setColor(client.color);
 
         await delay(2000);
-        msg.edit({ content: " ", embeds: [bassed] });
+        interaction.editReply({ content: " ", embeds: [bassed] });
     
+    } else {
+        const embed = new EmbedBuilder()
+            .setTitle(`${client.i18n.get(language, "nopremium", "premium_title")}`)
+            .setDescription(`${client.i18n.get(language, "nopremium", "premium_desc")}`)
+            .setColor(client.color)
+            .setTimestamp()
+
+        return interaction.editReply({ content: " ", embeds: [embed] });
     }
+} catch (err) {
+    console.log(err);
+    interaction.editReply({ content: `${client.i18n.get(language, "nopremium", "premium_error")}` })
+}
+}
 }

@@ -1,18 +1,27 @@
-const { EmbedBuilder } = require("discord.js");
+const { EmbedBuilder, ApplicationCommandOptionType } = require("discord.js");
 const axios = require('axios');
 
 module.exports = {
   name: ["pout"],
   description: "Use this command to see random waifu",
   category: "Media",
+  options: [
+    {
+        name: "target",
+        description: "Select user that will recieve your pout",
+        type: ApplicationCommandOptionType.User,
+        required: true,
+    },
+],
 
 run: async (interaction, client, user, language) => {    
 
     const result = await axios.get('https://api.otakugifs.xyz/gif?reaction=pout&format=gif')
+    const target = interaction.options.getUser("target"); 
     
     const pout = new EmbedBuilder()
       .setColor(client.color)
-      .setDescription(`**${interaction.user}** ${client.i18n.get(language, "media", "pout")} ${receiver}`)
+      .setDescription(`**${interaction.user}** ${client.i18n.get(language, "media", "pout")} ${target}`)
       .setFooter({
         text: `Request from ${interaction.user.username}`,
         iconURL: interaction.user.displayAvatarURL(),

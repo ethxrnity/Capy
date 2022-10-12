@@ -7,12 +7,29 @@ module.exports = {
     run: async (interaction, client, user, language) => {
         await interaction.deferReply({ ephemeral: false });
 
-        const msg = await interaction.editReply(`${client.i18n.get(language, "music", "join_loading")}`);
+        const nojoin = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "music", "play_join")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+        const nospeak = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "music", "play_speak")}`)
+        .setColor(client.color)
+        .setTimestamp();
+        
+        const novoice = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "music", "join_voice")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
 
         const { channel } = interaction.member.voice;
-        if(!channel) return msg.edit(`${client.i18n.get(language, "music", "join_voice")}`);
-        if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Connect)) return msg.edit(`${client.i18n.get(language, "music", "play_join")}`);
-        if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Speak)) return msg.edit(`${client.i18n.get(language, "music", "play_speak")}`);
+        if(!channel) return interaction.editReply({embeds: [novoice]});
+        if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Connect)) return interaction.editReply({embeds: [nojoin]});
+        if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Speak)) return interaction.editReply({embeds: [nospeak]});
 
         const player = client.manager.create({
             guild: interaction.guild.id,
@@ -25,11 +42,11 @@ module.exports = {
 
         const embed = new EmbedBuilder()
             .setDescription(`${client.i18n.get(language, "music", "join_msg", {
-                channel: channel.name
+                channel: channel.name, user: interaction.user
             })}`)
             .setColor(client.color)
 
-        msg.edit({ content: " ", embeds: [embed] })
+        interaction.editReply({ content: " ", embeds: [embed] })
         
     }
 }

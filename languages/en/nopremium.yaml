@@ -1,6 +1,6 @@
 ##### No premium Event #####
 
 # No premium sending msg!
-premium_author: "Only Premium!"
-premium_desc: "*You must be a premium user to execute this command.*"
+premium_title: "<a:peepoweirdlooking:1024239075277951036> Well, this is kinda akward..."
+premium_desc: "\nIm terribly sorry but this command is for premium only!\n\n**Q**: Whats premium?\n**A**: Premium is favor for people who helped <@574849327650963469> with development of <@1024092707808878702> or were lucky enough to get it for free.\n\nBut you dont have to worry the premium role is really easy to get so if you are interested just contact <@574849327650963469>.\n\n**Note**: Premium is not purchasble, we are not giving it for money and we wont ever give it for it!"
 premium_error: "Something went wrong, try again later."
