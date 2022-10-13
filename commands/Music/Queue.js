@@ -15,14 +15,25 @@ module.exports = {
         }
     ],
     run: async (interaction, client, user, language) => {
-        await interaction.deferReply({ ephemeral: false });
-        
+        await interaction.deferReply({ ephemeral: false });        
         const value = interaction.options.getInteger("page");
-
         const player = client.manager.get(interaction.guild.id);
-        if (!player) return interaction.editReply(`${client.i18n.get(language, "noplayer", "no_player")}`);
+
+        const noplayer = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+        const novoice = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+		if (!player) return interaction.editReply({ embeds: [noplayer]});
         const { channel } = interaction.member.voice;
-        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.editReply(`${client.i18n.get(language, "noplayer", "no_voice")}`);
+        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.editReply({ embeds: [novoice] });
 
         const song = player.queue.current;
         const qduration = `${formatDuration(player.queue.duration)}`;
@@ -66,14 +77,18 @@ module.exports = {
             pages.push(embed);
         }
 
+        const nopages = new EmbedBuilder()
+        .setColor(client.color)
+        .setDescription(`${client.i18n.get(language, "music", "queue_page_notfound", {
+            page: pagesNum,
+        })}`);
+
         if (!value) {
             if (pages.length == pagesNum && player.queue.length > 10) SlashPage(client, interaction, pages, 60000, player.queue.length, qduration, language);
             else return interaction.editReply({ embeds: [pages[0]] });
         } else {
             if (isNaN(value)) return interaction.editReply(`${client.i18n.get(language, "music", "queue_notnumber")}`);
-            if (value > pagesNum) return interaction.editReply(`${client.i18n.get(language, "music", "queue_page_notfound", {
-                page: pagesNum,
-            })}`);
+            if (value > pagesNum) return interaction.editReply({ embeds: [nopages] });
             const pageNum = value == 0 ? 1 : value - 1;
             return interaction.editReply({ embeds: [pages[pageNum]] });
         }

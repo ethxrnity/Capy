@@ -18,14 +18,17 @@ module.exports = {
         try {
             if (interaction.options.getString("song")) {
                 await interaction.deferReply({ ephemeral: false });
-
                 const value = interaction.options.get("song").value;
-                const msg = await interaction.editReply(`${client.i18n.get(language, "music", "play_loading")}`);
                 
-                const { channel } = interaction.member.voice;
-                if (!channel) return msg.edit(`${client.i18n.get(language, "music", "play_invoice")}`);
-                if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Connect)) return msg.edit(`${client.i18n.get(language, "music", "play_join")}`);
-                if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Speak)) return msg.edit(`${client.i18n.get(language, "music", "play_speak")}`);
+                const novoice = new EmbedBuilder()
+                .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+                .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+                .setColor(client.color)
+                .setTimestamp();
+                
+                const { channel } = interaction.member.voice;           
+                if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Connect)) return interaction.editReply(`${client.i18n.get(language, "music", "play_join")}`);
+                if (!interaction.guild.members.cache.get(client.user.id).permissionsIn(channel).has(PermissionsBitField.Flags.Speak)) return interaction.editReply(`${client.i18n.get(language, "music", "play_speak")}`);
 
                 const player = await client.manager.create({
                     guild: interaction.guild.id,
@@ -48,7 +51,7 @@ module.exports = {
                                 request: res.tracks[0].requester
                             })}`)
                             .setColor(client.color)
-                        msg.edit({ content: " ", embeds: [embed] });
+                        interaction.editReply({ content: " ", embeds: [embed] });
                         if(!player.playing) player.play();
                     } else if(res.loadType == "PLAYLIST_LOADED") {
                         player.queue.add(res.tracks)
@@ -61,7 +64,7 @@ module.exports = {
                                 request: res.tracks[0].requester
                             })}`)
                             .setColor(client.color)
-                        msg.edit({ content: " ", embeds: [embed] });
+                        interaction.editReply({ content: " ", embeds: [embed] });
                         if(!player.playing) player.play();
                     } else if(res.loadType == "SEARCH_RESULT") {
                         player.queue.add(res.tracks[0]);
@@ -73,14 +76,14 @@ module.exports = {
                                 request: res.tracks[0].requester
                             })}`)
                             .setColor(client.color)
-                        msg.edit({ content: " ", embeds: [embed] });
+                        interaction.editReply({ content: " ", embeds: [embed] });
                         if(!player.playing) player.play();
                     } else if(res.loadType == "LOAD_FAILED") {
-                        msg.edit(`${client.i18n.get(language, "music", "play_fail")}`); 
+                        interaction.editReply(`${client.i18n.get(language, "music", "play_fail")}`); 
                         player.destroy();
                     }
                 } else {
-                    msg.edit(`${client.i18n.get(language, "music", "play_match")}`); 
+                    interaction.editReply(`${client.i18n.get(language, "music", "play_match")}`); 
                     player.destroy();
                 }
             }

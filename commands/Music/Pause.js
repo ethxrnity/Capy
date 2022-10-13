@@ -20,16 +20,23 @@ module.exports = {
         .setColor(client.color)
         .setTimestamp();
 
+        const pause = new EmbedBuilder()
+        .setDescription(`Pause...`)
+        .setColor(client.color)
+
+        const resume = new EmbedBuilder()
+        .setDescription(`Resume...`)
+        .setColor(client.color)
+
 		if (!player) return interaction.editReply({ embeds: [noplayer]});
         const { channel } = interaction.member.voice;
         if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.editReply({ embeds: [novoice] });
         
         await player.pause(player.playing);
-        const uni = player.paused ? `${client.i18n.get(language, "music", "pause_switch_pause")}` : `${client.i18n.get(language, "music", "pause_switch_resume")}`;
 
         const embed = new EmbedBuilder()
             .setDescription(`${client.i18n.get(language, "music", "pause_msg", {
-                pause: uni
+                channel: channel.name, user: interaction.user 
             })}`)
             .setColor(client.color);
 

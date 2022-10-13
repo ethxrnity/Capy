@@ -33,12 +33,9 @@ np_title_pause: "Song paused..."
 np_icon: "https://cdn.discordapp.com/emojis/1030110508315050086.gif"
 
 ### Pause command!
-pause_switch_pause: "Paused"
-pause_switch_resume: "Resumed"
-pause_msg: "`⏯` | *Song has been:* `%{pause}`"
+pause_msg: "\n**Song was successfully paused**\n\nCurrent channel: **%{channel}**\nPaused by: %{user}"
 
 ### Play command!
-play_loading: "Loading please wait..."
 play_invoice: "You need to be in a voice channel to use command."
 play_join: "\nIm terribly sorry but i lack the permission `CONNECT`. Without that im not able to join a voice-channel"
 play_speak: "\nIm terribly sorry but i lack the permission `SPEAK`. Without that im not able to speak in a voice-channel"
@@ -52,59 +49,28 @@ play_result: "**Queued • [%{title}](%{url})** `%{duration}` • %{request}"
 play_fail: "Error loading track failed"
 play_match: "Error song not matches"
 
-### Previous command!
-previous_loading: "Loading please wait..."
-previous_notfound: "No previous song/s found."
-previous_msg: "`⏮` | *Song has been:* `Previous`"
-
 ### Queue command!
 queue_author: "Queue - %{guild}"
-queue_description: "*Currently Playing*\n*[%{title}](%{url})* `[%{duration}]` • %{request}\n\n*Rest of queue*:%{rest}"
+queue_description: "**Currently Playing**\n[%{title}](%{url}) `[%{duration}]` • %{request}\n\n**Rest of queue**:%{rest}"
 queue_footer: "Page • %{page}/%{pages} | %{queue_lang} • Song | %{duration} • Total duration"
-queue_notnumber: "Page must be a number."
-queue_page_notfound: "There are only %{page} pages available."
+queue_notnumber: "\n<:skullclown:1029822045434953738> **What do u think u are doing rn?**\n\nDid u seriously think that ill be able to handle characters in this command u clown? Dont be like this and hit gym instead of trolling on dc"
+queue_page_notfound: "\n<:cooleyebrowraise:1029822119514742874>**I dont have that many pages**\n\nThere are only %{page} pages available.\nIf u want more then add more songs into the queue."
 
 ### Resume command!
-resume_loading: "Loading please wait..."
-resume_switch_pause: "Paused"
-resume_switch_resume: "Resumed"
-resume_msg: "`⏯` | *Song has been:* `%{resume}`"
-
-### Search command!
-search_loading: "Loading please wait..."
-search_invoice: "You need to be in a voice channel to use command."
-search_join: "I don't have permission to join your voice channel."
-search_speak: "I don't have permission to speak in your voice channel."
-search_arg: "Please provide a song name or link to search."
-
-search_title: "Song Selection..."
-search_select: "**(%{num}.) [%{title}](%{url})** `%{duration}` Author: `%{author}`"
-search_footer: "Please select a song in 30 seconds."
-search_no_response: "No response."
-
-search_result: "**Queued • [%{title}](%{url})** `%{duration}` • %{request}"
-search_playlist: "**Queued • [%{title}](%{url})** `%{duration}` (%{songs} tracks) • %{request}"
-
-search_fail: "Error loading track failed"
-search_match: "Error song not matches"
+resume_msg: "\n**Song was successfully resumed**\n\nCurrent channel: **%{channel}**\nResumed by: %{user}"
 
 ### Shuffle command!
-shuffle_loading: "Loading please wait..."
-shuffle_msg: "`🔀` | *Queue has been:* `Shuffled`"
+shuffle_msg: "\n<a:5680trollege:1029822182081175634> **Queue was successfully shuffled**\n\nNow u will be able to listen to all songs randomly!\n\nChannel name: **%{channel}**\nShuffled by: %{user}"
 
 ### Skip command!
-skip_loading: "Loading please wait..."
-skip_msg: "`⏭` | *Song has been:* `Skipped`"
+skip_msg: "\n<a:9889pain:1029822106369794110> **Song was successfully skipped**\n\nLets hope u used this command just bc u didnt like the song that was playing. If not dont be a dick and dont skip songs that are others listening to!"
 
 ### Volume command!
-volume_loading: "Loading please wait..."
-volume_usage: "*Current volume:* `%{volume}%`"
-volume_invalid: "You may only set the volume to 1% - 100%"
-volume_msg: "`🔊` | *Change volume to:* `%{volume}%`"
+volume_usage: "Current volume: **%{volume}%**"
+volume_invalid: "<:skullclown:1029822045434953738> **What did u think will happen?**\n\nI dont know man why wont u rather use better activities instead of trying to put random numbers in my command. Go rather hit a gym and put on some weights"
+volume_msg: "<a:LETSGOOO:1024268305818734602> **Volume was successfully changed**\n\nNew volume: **%{volume}**\nChanged by: %{user}"
 
 ### PlaySkip command!
-playskip_loading: "Loading please wait..."
-
 playskip_track: "**Skipped • [%{title}](%{url})** `%{duration}` • %{request}"
 playskip_playlist: "**Skipped • [%{title}](%{url})** `%{duration}` (%{songs} tracks) • %{request}"
 playskip_result: "**Skipped • [%{title}](%{url})** `%{duration}` • %{request}"
@@ -112,20 +78,8 @@ playskip_result: "**Skipped • [%{title}](%{url})** `%{duration}` • %{request
 playskip_fail: "Error loading track failed"
 playskip_match: "Error song not matches"
 
-### PlayTop command!
-playtop_loading: "Loading please wait..."
+### RemoveTrack command!
+removetrack_already: "\n<:skullclown:1029822045434953738> **What do u think u are doing rn?**\n\nI think u misunderstood the reason of this command. Its supposed to remove songs from queue not to skip them"
+removetrack_notfound: "\n<:maaaaan:1030115825505546300> **Well... i think we got 404**\n\nIm sorry to tell you this but the provided song isnt in the queue. If u thinks its an error double check before executing the command"
 
-playtop_track: "**Shifted • [%{title}](%{url})** `%{duration}` • %{request}"
-playtop_playlist: "**Shifted • [%{title}](%{url})** `%{duration}` (%{songs} tracks) • %{request}"
-playtop_result: "**Shifted • [%{title}](%{url})** `%{duration}` • %{request}"
-
-playtop_fail: "Error loading track failed"
-playtop_match: "Error song not matches"
-
-### Move command!
-move_loading: "Loading please wait..."
-
-move_already: "Cannot remove a song that is already playing."
-move_notfound: "Song not found."
-
-move_desc: "**Moved • [%{name}](%{url})** to %{pos}"
+removetrack_desc: "\n<a:9889pain:1029822106369794110> **Song was successfully removed from the queue**\n\n **Removed: [%{name}](%{url})**\nDuration: `%{duration}`\nRequested by: %{request}\n Removed by: %{user}"

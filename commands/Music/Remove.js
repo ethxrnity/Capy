@@ -15,18 +15,34 @@ module.exports = {
     ],
     run: async (interaction, client, user, language) => {
         await interaction.deferReply({ ephemeral: false });
-
-        const tracks = interaction.options.getInteger("position");
-
-        const msg = await interaction.editReply(`${client.i18n.get(language, "music", "move_loading")}`);
-        
+        const tracks = interaction.options.getInteger("position");    
         const player = client.manager.get(interaction.guild.id);
-        if (!player) return msg.edit(`${client.i18n.get(language, "noplayer", "no_player")}`);
-        const { channel } = interaction.member.voice;
-        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return msg.edit(`${client.i18n.get(language, "noplayer", "no_voice")}`);
 
-        if (tracks == 0) return msg.edit(`${client.i18n.get(language, "music", "removetrack_already")}`);
-        if (tracks > player.queue.length) return msg.edit(`${client.i18n.get(language, "music", "removetrack_notfound")}`);
+        const noplayer = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+
+        const novoice = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+
+        const removealready = new EmbedBuilder()
+        .setDescription(`${client.i18n.get(language, "music", "removetrack_already")}`)
+        .setColor(client.color)
+
+        const removenotfound = new EmbedBuilder()
+        .setDescription(`${client.i18n.get(language, "music", "removetrack_notfound")}`)
+        .setColor(client.color)
+
+
+		if (!player) return interaction.editReply({ embeds: [noplayer]});
+        const { channel } = interaction.member.voice;
+        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.editReply({ embeds: [novoice] });
+
+        if (tracks == 0) return interaction.editReply({ embeds: [removealready]});
+        if (tracks > player.queue.length) return interaction.editReply({ embeds: [removenotfound]});
 
         const song = player.queue[tracks - 1];
 
@@ -37,10 +53,12 @@ module.exports = {
                 name: song.title,
                 url: song.uri,
                 duration: convertTime(song.duration, true),
-                request: song.requester
+                request: song.requester,
+                user: interaction.user
             })
+            .setColor(client.color)
         }`)
 
-        return msg.edit({ content: " ", embeds: [embed] });
+        return interaction.editReply({ content: " ", embeds: [embed] });
     }
 }

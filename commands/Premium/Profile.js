@@ -10,28 +10,24 @@ module.exports = {
         await interaction.deferReply({ ephemeral: false });
         
         const PremiumPlan = await Premium.findOne({ Id: interaction.user.id })
-        const expires = moment(PremiumPlan.premium.expiresAt).format('dddd, MMMM Do YYYY HH:mm:ss');
+        const expires = moment(PremiumPlan.premium.expiresAt).format('MMMM Do YYYY');
 
         try {
             if (user && user.isPremium) {
                 const embed = new EmbedBuilder()
-                    .setAuthor({ name: `${client.i18n.get(language, "premium", "profile_author")}`, iconURL: client.user.displayAvatarURL() })
                     .setDescription(`${client.i18n.get(language, "premium", "profile_desc", {
                         user: interaction.user.tag,
                         plan: PremiumPlan.premium.plan,
                         expires: expires
                     })}`)
                     .setColor(client.color)
-                    .setTimestamp()
 
                 return interaction.editReply({ embeds: [embed] });
 
             } else {
                 const embed = new EmbedBuilder()
-                    .setAuthor({ name: `${client.i18n.get(language, "nopremium", "premium_author")}`, iconURL: client.user.displayAvatarURL() })
                     .setDescription(`${client.i18n.get(language, "nopremium", "premium_desc")}`)
                     .setColor(client.color)
-                    .setTimestamp()
         
                 return interaction.editReply({ content: " ", embeds: [embed] });
             }
