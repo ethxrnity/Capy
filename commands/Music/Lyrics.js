@@ -15,14 +15,28 @@ module.exports = {
     ],
     run: async (interaction, client, user, language) => {
         await interaction.deferReply({ ephemeral: false });
-
-        const msg = await interaction.editReply(`${client.i18n.get(language, "music", "lyrics_loading")}`);
         const value = interaction.options.getString("input");
-
         const player = client.manager.get(interaction.guild.id);
-        if (!player) return msg.edit(`${client.i18n.get(language, "noplayer", "no_player")}`);
+
+        const noplayer = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+        const novoice = new EmbedBuilder()
+        .setTitle(`${client.i18n.get(language, "noplayer", "no_player_title")}`)
+        .setDescription(`${client.i18n.get(language, "noplayer", "no_player")}`)
+        .setColor(client.color)
+        .setTimestamp();
+
+        const notfound = new EmbedBuilder()
+        .setDescription(`${client.i18n.get(language, "music", "lyrics_notfound")}`)
+        .setColor(client.color)
+
+		if (!player) return interaction.editReply({ embeds: [noplayer]});
         const { channel } = interaction.member.voice;
-        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return msg.edit(`${client.i18n.get(language, "noplayer", "no_voice")}`);
+        if (!channel || interaction.member.voice.channel !== interaction.guild.members.me.voice.channel) return interaction.editReply({ embeds: [novoice] });
 
         let song = value;
             let CurrentSong = player.queue.current;
@@ -32,10 +46,10 @@ module.exports = {
 
         try {
             lyrics = await lyricsfinder(song, "");
-            if (!lyrics) return msg.edit(`${client.i18n.get(language, "music", "lyrics_notfound")}`);
+            if (!lyrics) return interaction.editReply({ embeds: [notfound]});
         } catch (err) {
             console.log(err);
-            return msg.edit(`${client.i18n.get(language, "music", "lyrics_notfound")}`);
+            return interaction.editReply({ embeds: [notfound]});
         }
         let lyricsEmbed = new EmbedBuilder()
             .setColor(client.color)
@@ -50,7 +64,7 @@ module.exports = {
             lyricsEmbed.setDescription(`${client.i18n.get(language, "music", "lyrics_toolong")}`);
         }
 
-        msg.edit({ content: ' ', embeds: [lyricsEmbed] });
+        interaction.editReply({ content: ' ', embeds: [lyricsEmbed] });
         
     }
 }

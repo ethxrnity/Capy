@@ -1,13 +1,13 @@
 ### 247 command
-247_off: "\n<:moyaiguitar:1029768365390168104>**Well.. looks like someone doesnt like my feature?**\n\nI think u used this command without knowing what will be the after come. U should better turn it on back before i leak your Explorer history with all the hacks from 2010"
-247_on: "\n<:mariachiflushed:1029768358620582000>**Truly right decision, thats why u use me!**\n\nIf u dont want to use my super feature anymore just turn it off with the same command. But i dont recommend that, only people without taste do that"
+247_off: "\n<:moyaiguitar:1029768365390168104> **Well.. looks like someone doesnt like my feature?**\n\nI think u used this command without knowing what will be the after come. U should better turn it on back before i leak your Explorer history with all the hacks from 2010"
+247_on: "\n<:mariachiflushed:1029768358620582000> **Truly right decision, thats why u use me!**\n\nIf u dont want to use my super feature anymore just turn it off with the same command. But i dont recommend that, only people without taste do that"
 
 ### Autoplay command!
-autoplay_off: "\n<a:losecontrol:1029771915872706674>**Im not really a fan of this function anyways**\n\nNot allowing others to use my super features is a sin. I recommend using this bot only in the worst cases or if u cant find a good playlist (Or boomer case)"
-autoplay_on: "\n<a:losecontrol:1029771915872706674>**Nice, u found this cool feature!**\n\nThis function allows you to listen to random songs from YouTube library. I hope u wont dislike my taste and maybe find a new song to your current playst"
+autoplay_off: "\n<a:losecontrol:1029771915872706674> **Im not really a fan of this function anyways**\n\nNot allowing others to use my super features is a sin. I recommend using this bot only in the worst cases or if u cant find a good playlist (Or boomer case)"
+autoplay_on: "\n<a:losecontrol:1029771915872706674> **Nice, u found this cool feature!**\n\nThis function allows you to listen to random songs from YouTube library. I hope u wont dislike my taste and maybe find a new song to your current playst"
 
 ### Clearqueue command!
-clearqueue_msg: "\n<a:9889pain:1029822106369794110>**The queue was successfully cleared**\n\nQueue was cleared of the song polutions and is back to normal. Please bare in mind that adding polution into queue wont fix your irl issues"
+clearqueue_msg: "\n<a:9889pain:1029822106369794110> **The queue was successfully cleared**\n\nQueue was cleared of the song polutions and is back to normal. Please bare in mind that adding polution into queue wont fix your irl issues"
 
 ### Join command!
 join_voice: "\nIm sorry to tell u that u are using this command while not being in channel.\nIf u wish to use this command please first join some channel."
@@ -17,52 +17,22 @@ join_msg: "\n**Successfully joined your channel!**\n\nChannel name: **%{channel}
 leave_msg: "\n**Successfully left your channel!**\n\nChannel name: **%{channel}**\nKicked by: %{user}"
 
 ### Loop command!
-loop_loading: "Loading please wait..."
-loop_current: "`🔁` | *Song is loop:* `Current`"
-unloop_current: "`🔁` | *Song is unloop:* `Current`"
-loop_all: "`🔁` | *Song is loop:* `All`"
-unloop_all: "`🔁` | *Song is unloop:* `All`"
+loop_current: "\n<:flushedegg:1029814528558506025> **Current song was successfully set to loop**\n\nYour chosen song will be now played over and over again. Adding new song into queue wont make the new one part of the loop. If u wish to loop your whole queue use the second choice"
+unloop_current: "\n<a:9889pain:1029822106369794110> **Current song was successfully removed from loop**\n\nYour chosen song wont be played over and over again as u commanded. If u didnt like this song enough to set it on loop try out `After Dark` for better experience"
+loop_all: "\n<:flushedegg:1029814528558506025> **Queue was successfully set to loop**\n\nYour song queue will be now played over and over again. Adding new song into queue will make the new one part of the loop as well. If u wish to loop your chosen song only use the first choice"
+unloop_all: "\n<a:9889pain:1029822106369794110> **Queue was successfully removed from loop**\n\nYour song queue wont be played over and over again as u commanded. If u didnt like this queue enough to set it on loop try out `After Dark Mix` for better experience"
 
 ### Lyrics command!
-lyrics_loading: "Searching for lyrics..."
-lyrics_notfound: "Couldn't find any lyrics for provided song!"
-lyrics_title: "Lyrics for %{song}"
-lyrics_toolong: "Lyrics too long to display!"
+lyrics_notfound: "\n<:maaaaan:1030115825505546300> **Well... i think we got 404**\n\nIm sorry to tell you this but the provided song probably doesnt have lyrics avabile. I wanst able to find a single lyrics from that song"
+lyrics_title: "Lyrics for: **%{song}**"
+lyrics_toolong: "\n<:sadgeegg:1029814515296129054> **Unfortunately this wont happen**\n\nThe song u chose is probably too long or its compilation of songs. My system isnt able to display that much characters, sorry"
 
 ### Nowplaying command!
 np_title: "Now playing..."
 np_title_pause: "Song paused..."
-np_icon: "https://cdn.discordapp.com/emojis/741605543046807626.gif"
-
-# Embed Field
-np_author: "Author:"
-np_request: "Requester:"
-np_volume: "Volume:"
-np_view: "Views:"
-np_upload: "Uploaded At:"
-np_download: "Download:"
-np_current_duration: "Current Duration: `[%{current_duration} / %{total_duration}]`"
-
-# Need in voice to use button
-np_invoice: "You need to be in a same/voice channel."
-
-# Message Button
-np_switch_pause: "Paused"
-np_switch_resume: "Resumed"
-np_pause_msg: "`⏯` | *Song has been:* `%{pause}`"
-
-np_replay_msg: "`⏮` | *Song has been:* `Replayed`"
-
-np_stop_msg: "`🚫` | *Song has been:* `Stopped`"
-
-np_skip_msg: "`⏭` | *Song has been:* `Skipped`"
-
-np_switch_enable: "Enabled"
-np_switch_disable: "Disabled"
-np_repeat_msg: "`🔁` | *Loop has been:* `%{loop}`"
+np_icon: "https://cdn.discordapp.com/emojis/1030110508315050086.gif"
 
 ### Pause command!
-pause_loading: "Loading please wait..."
 pause_switch_pause: "Paused"
 pause_switch_resume: "Resumed"
 pause_msg: "`⏯` | *Song has been:* `%{pause}`"
