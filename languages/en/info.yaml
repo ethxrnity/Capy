@@ -1,0 +1,29 @@
+# Core
+help_desc: "Capys prefix is set to `/`"
+command_list: "List of commands:"
+contact_owner: "If u find anything not working or doing something that it shouldnt do please contact Capys owner <@574849327650963469> for better feedback!"
+
+
+# Filter
+filter_help: "Help embed for Filter Category"
+filter_commands: "`3d`, `bass`, `darthvader`, `daycore`, `doubletime`, `doubletime`, `earrape`, `china`, `nightcore`, `reset`, `slowmotion`, `soft`, `vaporwave`"
+
+# Game
+game_help: "Help embed for Game Category"
+game_commands: "`relic`, `simulacra`, `weapon`, `matrice`"
+
+# Info
+info_help: "Help embed for Info Category"
+info_commands: "`about`, `help`, `credits`, `webchat`"
+
+# Media
+media_help: "Help embed for Media Category"
+media_commands: "`8ball`, `avatar`, `bite`, `feed`, `hug`, `kiss`, `laugh`, `lick`, `love`, `neko`, `pat`, `pout`, `punch`, `slap`, `waifu`"
+
+# Music
+music_help: "Help embed for Music Category"
+music_commands: "`24/7`, `clear`, `join`, `leave`, `loop`, `lyrics`, `pause`, `play`, `playskip`, `queue`, `remove`, `resume`, `shuffle`, `skip`, `volume`"
+
+# Playlist
+playlist_help: "Help embed for Playlist Category"
+playlist_commands: "`add`, `create`, `delete`, `details`, `import`, `private`, `public`, `remove`, `savequeue`, `view`"
