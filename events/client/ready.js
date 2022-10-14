@@ -31,7 +31,7 @@ module.exports = async (client) => {
             },
             {
                 type: ActivityType.Watching,
-                text: "for Vera update",
+                text: "for 2.3 update",
                 status: "dnd"
             },
             {
